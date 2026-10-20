@@ -1,0 +1,116 @@
+{
+  "comparison": [
+    {
+      "model": "Linear Regression",
+      "r2": 0.7398,
+      "train_r2": 0.7237,
+      "mae": 0.5362,
+      "rmse": 0.676
+    },
+    {
+      "model": "Random Forest (Default)",
+      "r2": 0.8778,
+      "train_r2": 0.981,
+      "mae": 0.347,
+      "rmse": 0.4632
+    },
+    {
+      "model": "Random Forest (Tuned)",
+      "r2": 0.864,
+      "train_r2": 0.9533,
+      "mae": 0.3708,
+      "rmse": 0.4887
+    }
+  ],
+  "best_model": "Random Forest (Tuned)",
+  "best_params": {
+    "random_forest__n_estimators": 100,
+    "random_forest__min_samples_split": 5,
+    "random_forest__min_samples_leaf": 2,
+    "random_forest__max_depth": 15
+  },
+  "top_feature_importances": [
+    {
+      "feature": "numerical__Avg_Daily_Usage_Hours",
+      "importance": 0.7169
+    },
+    {
+      "feature": "numerical__Sleep_Hours_Per_Night",
+      "importance": 0.1018
+    },
+    {
+      "feature": "numerical__Daily_Unlocks",
+      "importance": 0.0399
+    },
+    {
+      "feature": "skew__Study_Hours",
+      "importance": 0.0232
+    },
+    {
+      "feature": "numerical__Physical_Activity_Hours",
+      "importance": 0.0218
+    },
+    {
+      "feature": "numerical__Age",
+      "importance": 0.0139
+    },
+    {
+      "feature": "categorical__Purpose_Of_Use_Entertainment",
+      "importance": 0.009
+    },
+    {
+      "feature": "categorical__Grouped_country_Turkey",
+      "importance": 0.0067
+    },
+    {
+      "feature": "categorical__Grouped_country_Other",
+      "importance": 0.0057
+    },
+    {
+      "feature": "categorical__Most_Used_Platform_Instagram",
+      "importance": 0.0055
+    },
+    {
+      "feature": "ordinal__Stress_Level",
+      "importance": 0.0043
+    },
+    {
+      "feature": "categorical__Grouped_country_France",
+      "importance": 0.0041
+    }
+  ],
+  "dataset_size": 4998,
+  "features_count": 12,
+  "features_list": [
+    "Age",
+    "Avg_Daily_Usage_Hours",
+    "Daily_Unlocks",
+    "Physical_Activity_Hours",
+    "Sleep_Hours_Per_Night",
+    "Stress_Level",
+    "Gender",
+    "Grouped_country",
+    "Academic_Level",
+    "Most_Used_Platform",
+    "Purpose_Of_Use",
+    "Study_Hours"
+  ],
+  "score_stats": {
+    "min": 3.6,
+    "max": 9.4,
+    "mean": 6.2311524609843945,
+    "std": 1.2784758944667614
+  },
+  "top_10_countries": [
+    "Other",
+    "India",
+    "USA",
+    "Canada",
+    "Australia",
+    "UK",
+    "Germany",
+    "Mexico",
+    "Turkey",
+    "France"
+  ]
+}

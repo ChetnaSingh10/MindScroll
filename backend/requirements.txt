@@ -1,0 +1,10 @@
+# MindScroll Backend Requirements
+# Pinned scikit-learn matching the trained pipeline
+scikit-learn==1.9.1
+joblib==1.6.0
+pandas==3.0.6
+numpy==2.4.6
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+python-multipart==0.0.32

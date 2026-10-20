@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindScroll AI | Student Social Media & Mental Health Predictor</title>
+    <meta name="description" content="MindScroll AI: Predict and understand how daily screen time, social apps, and lifestyle habits impact student mental health using machine learning." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inline theme initializer: executes before first paint (zero flash) -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('mindscroll-theme');
+          var theme = saved || 'system';
+          var resolved = theme;
+          if (theme === 'system') {
+            resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', resolved);
+          document.documentElement.style.colorScheme = resolved;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-bg text-fg antialiased selection:bg-accent selection:text-accent-fg min-h-screen">
+    <noscript>
+      <div style="padding: 2rem; font-family: sans-serif; text-align: center;">
+        <h2>MindScroll AI requires JavaScript to be enabled.</h2>
+        <p>This interactive machine learning visualization and student mental wellness tool uses client-side rendering.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
